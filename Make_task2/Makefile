@@ -1,7 +1,7 @@
 CC = gcc
 TARGET = program
 OBJECTS = main.o src1.o src2.o src3.o
-METHOD ?=
+
 
 all: $(TARGET)
 
@@ -11,7 +11,7 @@ $(TARGET): $(OBJECTS)
 main.o : main.c src.h
 	$(CC) -c -o $@ $<
 
-ifeq ($(METHOD), include)
+ifeq ($(VAR), include)
 include make1.mk
 include make2.mk
 include make3.mk

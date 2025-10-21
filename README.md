@@ -15,10 +15,10 @@ TASK1:
 	
 TASK2: 
 	For build :
-	make -f Makefile METHOD=include
+	export VAR=include && make
 	
 	or if u want use "make -f" method follow this command:
-	make -f Makefile METHOD=include
+	export VAR= && make
 	
 	For execure :
 	./program
