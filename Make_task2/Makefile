@@ -8,7 +8,7 @@ all: $(TARGET)
 $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(TARGET)
 	
-main.o : main.c sum.h
+main.o : main.c src.h
 	$(CC) -c -o $@ $<
 
 include make1.mk
