@@ -15,7 +15,10 @@ TASK1:
 	
 TASK2: 
 	For build :
-	make -f Makefile
+	make -f Makefile METHOD=include
+	
+	or if u want use "make -f" method follow this command:
+	make -f Makefile METHOD=include
 	
 	For execure :
 	./program
